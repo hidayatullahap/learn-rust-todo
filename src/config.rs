@@ -14,6 +14,7 @@ pub struct ServerConfig {
 #[derive(Deserialize)]
 pub struct Config {
     pub server: ServerConfig,
+    pub db: deadpool_postgres::Config,
 }
 
 impl Config {
